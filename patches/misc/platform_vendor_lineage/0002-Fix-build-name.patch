@@ -1,0 +1,26 @@
+From f8b34c409894702bce1022252dda5fbae15be0b5 Mon Sep 17 00:00:00 2001
+From: TheAtt1la <alittauwu@gmail.com>
+Date: Wed, 26 Jul 2023 19:13:52 -0300
+Subject: [PATCH 2/2] Fix build name
+
+---
+ config/version.mk | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/config/version.mk b/config/version.mk
+index b4b9724..c510487 100644
+--- a/config/version.mk
++++ b/config/version.mk
+@@ -58,7 +58,7 @@ else
+ endif
+ 
+ # Internal version
+-LINEAGE_VERSION := risingOS-v$(RISING_VERSION)-$(RISING_CODENAME)-$(RISING_RELEASE_TYPE)-$(LINEAGE_BUILD_DATE)-$(CURRENT_DEVICE)-$(RISING_PACKAGE_TYPE)-$(RISING_BUILDTYPE)
++LINEAGE_VERSION := risingOS-v$(RISING_VERSION)-$(RISING_CODENAME)-$(RISING_RELEASE_TYPE)-$(LINEAGE_BUILD_DATE)-gsi-$(RISING_PACKAGE_TYPE)-$(RISING_BUILDTYPE)
+ 
+ # Display version
+-LINEAGE_DISPLAY_VERSION := risingOS-v$(RISING_VERSION)-$(RISING_CODENAME)-$(RISING_RELEASE_TYPE)-$(CURRENT_DEVICE)-$(RISING_PACKAGE_TYPE)-$(RISING_BUILDTYPE)
++LINEAGE_DISPLAY_VERSION := risingOS-v$(RISING_VERSION)-$(RISING_CODENAME)-$(RISING_RELEASE_TYPE)-gsi-$(RISING_PACKAGE_TYPE)-$(RISING_BUILDTYPE)
+-- 
+2.41.0
+
